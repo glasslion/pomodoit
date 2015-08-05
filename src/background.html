@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <canvas height="19" id="canvas" width="19"></canvas><img alt="icon" id=
+    "gfx" src="/assets/img/browser-action-icon-19.png">
+    <div id="time_left"></div>
+    <div id="break_left"></div>
+    <div class="audio" id="alarm_audio">
+        <audio preload="preload"><source src=
+        "/assets/sounds/alarm.ogg"></audio><audio><source src=
+        "/assets/sounds/ding.ogg"></audio>
+    </div>
+    <div class="audio" id="ticking_audio">
+        <audio loop="loop" preload="preload"><source src=
+        "/assets/sounds/ticking.ogg"></audio><audio loop="loop"><source src=
+        "/assets/sounds/quick_ticking.ogg"></audio><audio loop=
+        "loop"><source src=
+        "/assets/sounds/batteryclock.ogg"></audio><audio loop=
+        "loop"><source src=
+        "/assets/sounds/white_noise.ogg"></audio><audio loop="loop"><source src="/assets/sounds/cafe.ogg"></audio><audio loop="loop"><source src="/assets/sounds/sounds_of_frogs.ogg"></audio><audio loop="loop"><source src="/assets/sounds/rain_with_thunder.ogg"></audio>
+    </div>
+    <script src="/assets/js/lib/moment.js">
+    </script>
+    <script data-main="/scripts/background" src="/assets/js/lib/require.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "name": "Pomodoit",
+
+  "version": "0.0.1",
+
+  "description": "Pomodoro timer works with Doit.im.",
+
+  "background": {
+    "page": "background.html"
+  },
+
+  "browser_action": {
+    "default_icon": "assets/img/tomato-64.png",
+    "default_popup": "popup.html",
+    "default_title": "Main"
+  },
+
+  "permissions": [
+      "tabs",
+      "alarms",
+      "notifications",
+      "http://*/*",
+      "https://*/*",
+      "storage",
+      "contextMenus",
+      "background"
+  ],
+
+  "options_page": "options.html",
+
+  "icons": {
+    "16": "assets/img/tomato-16.png",
+    "32": "assets/img/tomato-32.png",
+    "64": "assets/img/tomato-64.png",
+    "128": "assets/img/tomato-128.png"
+  },
+
+  "web_accessible_resources": [
+    "assets/img/tomato-128.png"
+  ],
+
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+
+  "manifest_version": 2
+}
