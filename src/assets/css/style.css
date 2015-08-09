@@ -1,0 +1,107 @@
+html, body {
+  width: 360px;
+  overflow: hidden;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #222222;
+}
+
+.app header {
+  background: linear-gradient(-179deg, #FFF 0%, #EBEBEB 100%);
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #BBB;
+}
+
+.app footer {
+  background: #fff;
+  border-top: 1px solid #DDD;
+
+}
+i.pomodoit-icon {
+  cursor: default;
+  color: transparent;
+  display: inline-block;
+  text-align: center;
+  background: url(../img/tomato-24.png) no-repeat;
+  background-size: 24px;
+  height: 24px;
+  width: 24px;
+  margin: 7px;
+}
+
+.header-icon{
+  color: #F44336;
+  font-size: 2em !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#start-btn{
+  right: 20px;
+  cursor: pointer;
+}
+
+.digit-clock{
+  color: #F44336;
+  font-weight: bold;
+  margin: 0;
+  line-height: 38px;
+  font-size: 1.2em;
+}
+
+.todo-main {
+  height: 230px !important;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  overflow-y: auto;
+  background: #F4F4F4;
+}
+
+.todo-list {
+  position: relative;
+  z-index: 1;
+  padding: 10px 8px 15px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.todo-list ul{
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li{
+  list-style: none;
+}
+
+.todo-list .item {
+  background: #F9F9F9;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #eee;
+  padding: 0.3em;
+  list-style: none;
+  position: relative;
+}
+
+.todo-list .item .folder {
+  padding: 0 10px 0 5px;
+}
+
+.tab-group {
+  display: inline-block;
+}
+.right {
+  float: right;
+}
+
+
+.tab-group .tab-icon{
+  font-size: 1.5em;
+  padding: 8px;
+  cursor: pointer;
+}
